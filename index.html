@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Urban Miles – Hyderabad Run Club</title>
+  <title>Edit Run Club – Hyderabad</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap"
     rel="stylesheet">
@@ -64,6 +64,20 @@
       padding: 10px 18px;
       border-bottom: 1px solid #1e1e1e;
       height: 56px;
+    }
+
+    .brand-wordmark {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #fff;
+      white-space: nowrap;
+    }
+
+    .brand-wordmark .accent {
+      color: var(--lime);
     }
 
     .m-nav img {
@@ -173,6 +187,22 @@
     /* 56 = mobile nav height */
     .d-top-logo {
       display: none
+    }
+
+    .desktop-wordmark {
+      display: none;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 26px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #fff;
+      margin: 18px auto 0;
+      text-align: center;
+    }
+
+    .desktop-wordmark .accent {
+      color: var(--lime);
     }
 
     /* ═══════════════════════════════════
@@ -2013,7 +2043,7 @@
 
   <!-- ════ MOBILE TOP NAV ════ -->
   <nav class="m-nav">
-    <img src="um_bg_rev.png" alt="Urban Miles">
+    <div class="brand-wordmark">EDIT <span class="accent">RUN CLUB</span></div>
     <button class="burger" id="mBtn" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -2031,7 +2061,7 @@
   <!-- ════ DESKTOP SIDE NAV ════ -->
   <nav class="s-nav">
     <div class="sn-brand">
-      <img src="um_bg_rev.png" alt="">
+      <div class="brand-wordmark">EDIT <span class="accent">RUN CLUB</span></div>
     </div>
     <div class="sn-links">
       <a href="#about">ABOUT</a>
@@ -2043,7 +2073,7 @@
 
   <!-- ════ PAGE ════ -->
   <div class="wrap">
-    <img src="um_bg_rev.png" class="d-top-logo" alt="Urban Miles Logo">
+    <div class="desktop-wordmark">EDIT <span class="accent">RUN CLUB</span></div>
 
     <!-- HERO -->
     <section id="hero">
@@ -2053,7 +2083,7 @@
           type="video/mp4">
       </video>
       <div class="hero-body">
-        <div class="eyebrow">HYDERABAD <span>·</span> EST. 2026 <span>·</span> EVERY SUNDAY 6AM</div>
+        <div class="eyebrow">HYDERABAD <span>·</span> EST. 2026 <span>·</span> EVERY SATURDAY 6AM</div>
         <div class="h1">SWEAT.<span class="ac">SMILE.</span><br>SOCIALIZE.</div>
         <div class="cta-row">
           <div class="tagline">It starts with a run. It becomes an experience.</div>
@@ -2065,68 +2095,51 @@
       </div>
     </section>
 
-    <!-- PARTNER -->
-    <section id="partner">
-      <div class="p-row">
-        <div class="p-line"></div>
-        <div class="p-lbl">Location PARTNER</div>
-        <div class="p-line"></div>
-      </div>
-
-      <div class="partner-banner-container">
-        <div class="partner-banner"></div>
-      </div>
-
-      <div class="partner-footer">
-        <div class="p-lbl-name">MANA KATHA CAFE</div>
-      </div>
-    </section>
-
     <!-- ABOUT -->
     <section id="about">
       <div class="marquee-wrap">
         <div class="mq-row">
           <div class="mq-track">
-            <span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span>
-            <span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span>
-            <span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span>
+            <span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span>
+            <span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span>
+            <span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span>
           </div>
         </div>
         <div class="mq-row">
           <div class="mq-track rev">
-            <span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span>
-            <span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span>
-            <span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span>
+            <span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span>
+            <span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span>
+            <span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span>
           </div>
         </div>
         <div class="mq-row">
           <div class="mq-track">
-            <span class="lit">URBAN MILES &nbsp;</span><span class="lit">URBAN MILES &nbsp;</span>
-            <span class="lit">URBAN MILES &nbsp;</span><span class="lit">URBAN MILES &nbsp;</span>
-            <span class="lit">URBAN MILES &nbsp;</span><span class="lit">URBAN MILES &nbsp;</span>
-            <span class="lit">URBAN MILES &nbsp;</span><span class="lit">URBAN MILES &nbsp;</span>
+            <span class="lit">RUN CLUB &nbsp;</span><span class="lit">RUN CLUB &nbsp;</span>
+            <span class="lit">RUN CLUB &nbsp;</span><span class="lit">RUN CLUB &nbsp;</span>
+            <span class="lit">RUN CLUB &nbsp;</span><span class="lit">RUN CLUB &nbsp;</span>
+            <span class="lit">RUN CLUB &nbsp;</span><span class="lit">RUN CLUB &nbsp;</span>
           </div>
         </div>
         <div class="mq-row">
           <div class="mq-track rev">
-            <span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span>
-            <span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span>
-            <span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span>
+            <span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span>
+            <span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span>
+            <span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span>
           </div>
         </div>
         <div class="mq-row">
           <div class="mq-track">
-            <span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span>
-            <span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span>
-            <span>URBAN MILES &nbsp;</span><span>URBAN MILES &nbsp;</span>
+            <span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span>
+            <span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span>
+            <span>RUN CLUB &nbsp;</span><span>RUN CLUB &nbsp;</span>
           </div>
         </div>
         <div class="mq-row">
           <div class="mq-track rev">
-            <span class="lit">URBAN MILES &nbsp;</span><span class="lit">URBAN MILES &nbsp;</span>
-            <span class="lit">URBAN MILES &nbsp;</span><span class="lit">URBAN MILES &nbsp;</span>
-            <span class="lit">URBAN MILES &nbsp;</span><span class="lit">URBAN MILES &nbsp;</span>
-            <span class="lit">URBAN MILES &nbsp;</span><span class="lit">URBAN MILES &nbsp;</span>
+            <span class="lit">RUN CLUB &nbsp;</span><span class="lit">RUN CLUB &nbsp;</span>
+            <span class="lit">RUN CLUB &nbsp;</span><span class="lit">RUN CLUB &nbsp;</span>
+            <span class="lit">RUN CLUB &nbsp;</span><span class="lit">RUN CLUB &nbsp;</span>
+            <span class="lit">RUN CLUB &nbsp;</span><span class="lit">RUN CLUB &nbsp;</span>
           </div>
         </div>
       </div>
@@ -2138,9 +2151,9 @@
         </div>
         <div class="about-h">MORE THAN A<br>RUN CLUB.<br><span class="ac">A LIFESTYLE.</span></div>
         <div class="about-txt">
-          <p>Urban Miles is Hyderabad's community-first running experience — where the discipline of early morning runs
+          <p>Edit Run Club is Hyderabad's community-first running experience — where the discipline of early morning runs
             meets the energy of music, coffee, and real human connection.</p>
-          <p>Every Sunday at 6AM, we gather. We run together, fuel up at the city's best cafés, and vibe. No pressure,
+          <p>Every Saturday at 6AM, we gather. We run together, fuel up at the city's best cafés, and vibe. No pressure,
             no pace requirements — just people who show up.</p>
         </div>
         <div class="feat-list">
@@ -2170,7 +2183,7 @@
             </div>
             <div>
               <div class="f-title">Post-Run Culture</div>
-              <div class="f-desc">Wind down at partner cafés, build friendships, and make Sunday mornings the best part
+              <div class="f-desc">Wind down at partner cafés, build friendships, and make Saturday mornings the best part
                 of your week.</div>
             </div>
           </div>
@@ -2190,7 +2203,7 @@
           <div class="s-num">01</div>
           <div class="s-title">SWEAT</div>
           <div class="s-div"></div>
-          <div class="s-desc">3KM every Sunday at 6AM. All paces welcome. The city before it wakes up.</div>
+          <div class="s-desc">3KM every Saturday at 6AM. All paces welcome. The city before it wakes up.</div>
         </div>
         <div class="step">
           <div class="s-num">02</div>
@@ -2211,18 +2224,14 @@
     <section id="events">
       <div class="ev-left">
         <div class="badge">
-          <div class="dot"></div><span>THIS SUNDAY</span>
+          <div class="dot"></div><span>UPCOMING</span>
         </div>
-        <div class="ev-date">30 </div>
-        <div class="ev-my"><span>AUGUST</span><span>2026</span></div>
+        <div class="ev-date">SAT</div>
+        <div class="ev-my"><span>RUN</span><span>DAY</span></div>
         <div class="ev-details">
           <div class="ev-row"><span class="k">START TIME</span><span class="v">06:00 AM</span></div>
-          <div class="ev-row"><span class="k">MEETING POINT</span><span class="v">MANA KATHA CAFE
-              ,VANASTHALIPURAM</span>
-          </div>
           <div class="ev-row"><span class="k">DISTANCE</span><span class="v">3 KM — All paces welcome</span></div>
-          <div class="ev-row"><span class="k">AFTER-RUN</span><span class="v">MANA KATHA CAFE ,VANASTHALIPURAM</span>
-          </div>
+          <div class="ev-row"><span class="k">VIBE</span><span class="v">Music, movement, community</span></div>
         </div>
       </div>
       <div class="ev-right">
@@ -2334,7 +2343,7 @@
         <div class="ln"></div><span>REGISTRATION</span>
         <div class="ln"></div>
       </div>
-      <div class="reg-h">REGISTER FOR<br><span class="ac">THIS SUNDAY</span></div>
+      <div class="reg-h">REGISTER FOR<br><span class="ac">THIS SATURDAY</span></div>
       <div class="reg-sub">Fill in your details below. Complete your payment via UPI, enter the UTR number, and upload a
         screenshot.</div>
 
@@ -2360,14 +2369,14 @@
 
         <!-- Payment QR -->
         <div class="pay-section">
-          <div class="pay-title">SCAN TO PAY ₹299</div>
+          <div class="pay-title">SCAN TO PAY ₹199</div>
           <!-- QR Code Container -->
           <div id="qrContainer"
             style="width: 180px; height: 180px; margin: 0 auto 12px; background: #fff; border-radius: 10px; padding: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
             <img src="yash.jpg" alt="UPI Payment QR Code" style="width: 100%; height: 100%; object-fit: contain;">
           </div>
           <div class="pay-note">Scan the QR code above with any UPI app or click the button below to complete payment of
-            ₹299.<br>Then enter the UTR number and upload a screenshot.</div>
+            ₹199.<br>Then enter the UTR number and upload a screenshot.</div>
           <button type="button" id="upiPayBtn"
             style="margin-top: 16px; padding: 12px 24px; background: linear-gradient(135deg, #4C63D2 0%, #2D3E8F 100%); color: #fff; border: none; border-radius: 8px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; transition: transform .2s; width: 100%;">💳
             PAY WITH UPI</button>
@@ -2418,7 +2427,7 @@
           </div>
           <div>
             <div class="cb-label">CONTACT FOR ENQUIRY</div>
-            <div class="cb-value">8309140165 · 9010337967</div>
+            <div class="cb-value">8309140165</div>
           </div>
         </div>
 
@@ -2430,7 +2439,7 @@
       <div class="form-msg" id="formSuccess">
         <div class="msg-icon">✅</div>
         <div class="msg-title">REGISTERED SUCCESSFULLY!</div>
-        <div class="msg-text">We've received your registration. See you this Sunday at 6AM! 🏃‍♂️</div>
+        <div class="msg-text">We've received your registration. See you this Saturday at 6AM! 🏃‍♂️</div>
         <div class="wa-divider"></div>
         <a href="https://chat.whatsapp.com/JYmMxAOkKu52N6bp3CbNmB" target="_blank" class="wa-join">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -2453,7 +2462,7 @@
     <!-- FOOTER -->
     <footer>
       <div class="foot-in">
-        <img src="um_bg_rev.png" alt="Urban Miles" class="foot-logo">
+        <div class="brand-wordmark">EDIT <span class="accent">RUN CLUB</span></div>
         <div class="foot-links">
           <a href="#">HOME</a>
           <a href="#events">EVENTS</a>
@@ -2488,7 +2497,7 @@
         </div>
       </div>
       <div class="foot-bot">
-        <span>© 2026 Urban Miles · All Rights Reserved</span>
+        <span>© 2026 Edit Run Club · All Rights Reserved</span>
         <span>Design and developed by <a href="#"><span class="dev">shubsss</span></a></span>
       </div>
     </footer>

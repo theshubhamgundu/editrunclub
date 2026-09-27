@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Urban Miles — Admin Panel</title>
+  <title>Edit Run Club — Admin Panel</title>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -19,7 +19,11 @@
       padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px;
     }
     .topbar-left { display: flex; align-items: center; gap: 14px; }
-    .topbar-left img { height: 28px; filter: brightness(0) invert(1); }
+    .topbar-wordmark {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 800;
+      letter-spacing: 1.5px; text-transform: uppercase; color: #fff;
+    }
+    .topbar-wordmark span { color: var(--lime); }
     .topbar-badge {
       font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 700;
       letter-spacing: 2px; text-transform: uppercase; color: var(--lime);
@@ -201,7 +205,11 @@
       from { opacity: 0; transform: translateY(16px) scale(.97); }
       to { opacity: 1; transform: translateY(0) scale(1); }
     }
-    .login-card img { height: 32px; filter: brightness(0) invert(1); margin-bottom: 24px; }
+    .login-card .login-wordmark {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 800;
+      letter-spacing: 2px; text-transform: uppercase; color: #fff; margin-bottom: 24px;
+    }
+    .login-card .login-wordmark span { color: var(--lime); }
     .login-card .lc-badge {
       display: inline-block;
       font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 700;
@@ -246,7 +254,7 @@
   <!-- LOGIN GATE -->
   <div class="login-overlay" id="loginOverlay">
     <div class="login-card">
-      <img src="um_bg_rev.png" alt="Urban Miles">
+      <div class="login-wordmark">EDIT <span>RUN CLUB</span></div>
       <div class="lc-badge">ADMIN PANEL</div>
       <div class="lc-title">ENTER PASSWORD</div>
       <div class="lc-sub">Authorized access only</div>
@@ -264,7 +272,7 @@
   <!-- TOP BAR -->
   <div class="topbar">
     <div class="topbar-left">
-      <img src="um_bg_rev.png" alt="Urban Miles">
+      <div class="topbar-wordmark">EDIT <span>RUN CLUB</span></div>
       <div class="topbar-badge">ADMIN</div>
     </div>
     <div class="topbar-right">
