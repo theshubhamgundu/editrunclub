@@ -10,6 +10,6 @@ const PAYMENT = {
     return 'upi://pay?pa=' + encodeURIComponent(this.UPI_ID) + 
            '&pn=' + encodeURIComponent(this.MERCHANT_NAME) + 
            '&am=' + this.AMOUNT + 
-           '&tn=' + encodeURIComponent('Edit Run Club Registration');
+           '&tn=' + encodeURIComponent('Edit Run Club - Pickleball Run N Rave');
   }
 };

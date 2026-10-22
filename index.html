@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Edit Run Club – Hyderabad</title>
+  <title>Edit Run Club – Hyderabad | Pickleball Run N' Rave</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap"
     rel="stylesheet">
@@ -813,6 +813,336 @@
 
     .btn-lb:active {
       background: #b5d83a
+    }
+
+    /* ═══════════════════════════════════
+       EVENT COLLAB & TITLE
+    ═══════════════════════════════════ */
+    .ev-collab-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200, 240, 70, .12);
+      border: 1px solid rgba(200, 240, 70, .3);
+      color: var(--lime);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .ev-event-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(30px, 7vw, 48px);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .ev-event-name span {
+      color: var(--lime);
+    }
+
+    /* ═══════════════════════════════════
+       SCHEDULE SECTION
+    ═══════════════════════════════════ */
+    #schedule {
+      width: 100%;
+      background: #0f0f0f;
+      padding: 56px 20px;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .sched-lbl {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .sched-lbl .ln {
+      width: 30px;
+      height: 1px;
+      background: var(--lime);
+    }
+
+    .sched-lbl span {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      color: var(--lime);
+      text-transform: uppercase;
+    }
+
+    .sched-h {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(38px, 11vw, 68px);
+      text-transform: uppercase;
+      line-height: .95;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .sched-h .ac {
+      color: var(--lime);
+    }
+
+    .sched-sub {
+      font-size: 14px;
+      color: rgba(255, 255, 255, .55);
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto 36px;
+      letter-spacing: .5px;
+    }
+
+    .sched-table {
+      max-width: 760px;
+      margin: 0 auto;
+      border: 1px solid #222;
+      border-radius: 12px;
+      background: rgba(18, 18, 18, .75);
+      backdrop-filter: blur(8px);
+      overflow: hidden;
+    }
+
+    .sched-row {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      padding: 18px 22px;
+      border-bottom: 1px solid #1a1a1a;
+      gap: 16px;
+      align-items: center;
+      transition: background .2s;
+    }
+
+    .sched-row:hover {
+      background: rgba(255, 255, 255, .03);
+    }
+
+    .sched-row.last {
+      border-bottom: none;
+    }
+
+    .sched-row.highlight {
+      background: rgba(200, 240, 70, .05);
+      border-left: 3px solid var(--lime);
+    }
+
+    .sched-time {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 18px;
+      letter-spacing: 1.5px;
+      color: var(--lime);
+      text-transform: uppercase;
+    }
+
+    .sched-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .sched-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .sched-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    @media (max-width: 560px) {
+      .sched-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 14px 16px;
+      }
+      .sched-time {
+        font-size: 16px;
+      }
+      .sched-title {
+        font-size: 14px;
+      }
+    }
+
+    /* ═══════════════════════════════════
+       HIGHLIGHTS SECTION
+    ═══════════════════════════════════ */
+    #highlights {
+      width: 100%;
+      background: var(--black);
+      padding: 56px 20px;
+    }
+
+    .hl-lbl {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .hl-lbl .ln {
+      width: 30px;
+      height: 1px;
+      background: var(--muted);
+    }
+
+    .hl-lbl span {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .hl-h {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(38px, 11vw, 68px);
+      text-transform: uppercase;
+      line-height: .95;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .hl-h .ac {
+      color: var(--lime);
+    }
+
+    .hl-sub {
+      font-size: 14px;
+      color: rgba(255, 255, 255, .55);
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto 36px;
+    }
+
+    .hl-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hl-card {
+      background: #141414;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 26px 22px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      transition: transform .25s ease, border-color .25s ease;
+    }
+
+    .hl-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(200, 240, 70, .45);
+    }
+
+    .hl-badge {
+      align-self: flex-start;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--lime);
+      background: rgba(200, 240, 70, .1);
+      border: 1px solid rgba(200, 240, 70, .2);
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+    }
+
+    .hl-icon {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .hl-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 21px;
+      letter-spacing: 1px;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .hl-desc {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ═══════════════════════════════════
+       MEAL SELECTION IN FORM
+    ═══════════════════════════════════ */
+    .meal-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 460px) {
+      .meal-options {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .meal-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 8px;
+      padding: 12px 14px;
+      cursor: pointer;
+      transition: all .2s;
+    }
+
+    .meal-option:hover {
+      border-color: rgba(200, 240, 70, .4);
+      background: rgba(255, 255, 255, .07);
+    }
+
+    .meal-option input[type="radio"] {
+      accent-color: var(--lime);
+      width: 17px;
+      height: 17px;
+      cursor: pointer;
+    }
+
+    .meal-option span {
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
     }
 
     /* ═══════════════════════════════════
@@ -1738,6 +2068,11 @@
         padding: 100px 60px
       }
 
+      #schedule,
+      #highlights {
+        padding: 80px 60px;
+      }
+
       #register {
         padding: 72px 60px
       }
@@ -1788,6 +2123,8 @@
       .about-body,
       .ev-left,
       #how,
+      #schedule,
+      #highlights,
       #cta {
         padding-left: 14px;
         padding-right: 14px;
@@ -1810,9 +2147,11 @@
   <div class="drawer" id="dPanel">
     <button class="d-close" id="dClose">✕</button>
     <a href="#about" onclick="cD()">ABOUT</a>
-    <a href="#events" onclick="cD()">EVENTS</a>
+    <a href="#events" onclick="cD()">EVENT DETAILS</a>
+    <a href="#schedule" onclick="cD()">SCHEDULE</a>
+    <a href="#highlights" onclick="cD()">HIGHLIGHTS</a>
     <a href="#how" onclick="cD()">THE FORMULA</a>
-    <a href="#cta" onclick="cD()">JOIN</a>
+    <a href="#register" onclick="cD()">REGISTER</a>
   </div>
 
   <!-- ════ DESKTOP SIDE NAV ════ -->
@@ -1823,8 +2162,10 @@
     <div class="sn-links">
       <a href="#about">ABOUT</a>
       <a href="#events">EVENTS</a>
-      <a href="#how">CULTURE</a>
-      <a href="#cta">JOIN</a>
+      <a href="#schedule">SCHEDULE</a>
+      <a href="#highlights">HIGHLIGHTS</a>
+      <a href="#how">THE FORMULA</a>
+      <a href="#register">REGISTER</a>
     </div>
   </nav>
 
@@ -1836,11 +2177,14 @@
     <section id="hero">
       <img class="hero-image" src="hero img.jpeg" alt="Edit Run Club runners">
       <div class="hero-body">
-        <div class="eyebrow">HYDERABAD <span>·</span> EST. 2026 <span>·</span> EVERY SATURDAY 6AM</div>
-        <div class="h1">SWEAT.<span class="ac">SMILE.</span><br>SOCIALIZE.</div>
+        <div class="eyebrow" style="color: #fff; background: rgba(10, 10, 10, .8); backdrop-filter: blur(8px); padding: 8px 18px; border-radius: 30px; border: 1px solid rgba(200,240,70,.4); display: inline-flex; align-items: center; gap: 6px;"><span style="color: var(--lime); font-weight: 800;">PADDOCK ✕ UNCANNED</span> <span>·</span> 25 OCT 2026 <span>·</span> 6 AM – 10 AM</div>
+        <div class="h1">PICKLEBALL.<br><span class="ac">RUN N' RAVE.</span></div>
         <div class="cta-row">
-          <div class="tagline">It starts with a run. It becomes an experience.</div>
-          <a href="#register" class="btn-l">REGISTER NOW</a>
+          <div class="tagline">3K Run · Pickleball & Games · Rave & Groove</div>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; align-items: center;">
+            <a href="#register" class="btn-l">REGISTER NOW</a>
+            <a href="#schedule" class="btn-wo">VIEW SCHEDULE</a>
+          </div>
         </div>
       </div>
       <div class="scroll-ind">
@@ -1899,15 +2243,13 @@
 
       <div class="about-body">
         <div class="sec-lbl">
-          <div class="ln"></div><span>ABOUT US</span>
+          <div class="ln"></div><span>ABOUT THE COLLAB</span>
           <div class="ln"></div>
         </div>
-        <div class="about-h">MORE THAN A<br>RUN CLUB.<br><span class="ac">A LIFESTYLE.</span></div>
+        <div class="about-h">MORE THAN A RUN.<br><span class="ac">AN ULTIMATE EXPERIENCE.</span></div>
         <div class="about-txt">
-          <p>Edit Run Club is Hyderabad's community-first running experience — where the discipline of early morning runs
-            meets the energy of music, coffee, and real human connection.</p>
-          <p>Every Saturday at 6AM, we gather. We run together, fuel up at the city's best cafés, and vibe. No pressure,
-            no pace requirements — just people who show up.</p>
+          <p><strong>Edit Run Club</strong> brings Hyderabad's biggest community collaboration to <strong>Paddock, Financial District</strong> alongside <strong>Uncanned</strong>.</p>
+          <p>On <strong>Sunday, 25 October 2026 (6:00 AM – 10:00 AM)</strong>, we bring together runners, players, and music lovers for a 3K morning run around Financial District, followed by pickleball games and challenges at Paddock, and an electric live DJ rave with Tollywood, Bollywood & EDM music, Uncanned prebiotic sodas, and fresh rice bowls.</p>
         </div>
         <div class="feat-list">
           <div class="feat">
@@ -1915,29 +2257,26 @@
               🏃
             </div>
             <div>
-              <div class="f-title">Group Running</div>
-              <div class="f-desc">Fun and energetic runs designed for all fitness levels. Run together, stay motivated,
-                enjoy every step.</div>
+              <div class="f-title">3K Community Run</div>
+              <div class="f-desc">Group run around Financial District at 6:15 AM. Fun and energetic, designed for all paces and fitness levels.</div>
             </div>
           </div>
           <div class="feat">
             <div class="f-icon" aria-hidden="true">
-              🎵
+              🏓
             </div>
             <div>
-              <div class="f-title">Music &amp; Vibes</div>
-              <div class="f-desc">Music-powered sessions that boost energy, mood, and the overall experience of every
-                run.</div>
+              <div class="f-title">Pickleball & Games</div>
+              <div class="f-desc">Casual matches, mini-challenges and social court play at Paddock. Rackets & equipment ready — all skill levels welcome.</div>
             </div>
           </div>
           <div class="feat">
             <div class="f-icon" aria-hidden="true">
-              ☕
+              🪩
             </div>
             <div>
-              <div class="f-title">Post-Run Culture</div>
-              <div class="f-desc">Wind down at partner cafés, build friendships, and make Saturday mornings the best part
-                of your week.</div>
+              <div class="f-title">Rave, Brews & Breakfast</div>
+              <div class="f-desc">Live DJ set pumping Tollywood, Bollywood & EDM beats, ice-cold Uncanned drinks, and fresh Veg/Non-Veg rice bowls.</div>
             </div>
           </div>
         </div>
@@ -1950,25 +2289,25 @@
         <div class="ln"></div><span>THE FORMULA</span>
         <div class="ln"></div>
       </div>
-      <div class="how-h">HOW IT WORKS</div>
+      <div class="how-h">RUN · PLAY · GROOVE</div>
       <div class="steps">
         <div class="step">
           <div class="s-num">01</div>
-          <div class="s-title">SWEAT</div>
+          <div class="s-title">RUN</div>
           <div class="s-div"></div>
-          <div class="s-desc">3KM every Saturday at 6AM. All paces welcome. The city before it wakes up.</div>
+          <div class="s-desc">6:15 AM: 3KM group run around Financial District following 6:00 AM check-in and dynamic warmup.</div>
         </div>
         <div class="step">
           <div class="s-num">02</div>
-          <div class="s-title">SMILE</div>
+          <div class="s-title">PLAY</div>
           <div class="s-div"></div>
-          <div class="s-desc">Post-run Cafeat the city's best cafés. Strangers become regulars.</div>
+          <div class="s-desc">7:30 AM: Pickleball action at Paddock. Casual social games, mini-challenges, and court battles.</div>
         </div>
         <div class="step active">
           <div class="s-num">03</div>
-          <div class="s-title lime">SOCIALIZE</div>
+          <div class="s-title lime">GROOVE</div>
           <div class="s-div"></div>
-          <div class="s-desc">Live DJ sets. Music that moves you. This is why they keep coming back.</div>
+          <div class="s-desc">8:30 AM – 10:00 AM: DJ kicks off the rave with Tollywood, Bollywood & EDM, Uncanned sodas & rice bowl breakfast.</div>
         </div>
       </div>
     </section>
@@ -1977,14 +2316,118 @@
     <section id="events">
       <div class="ev-left">
         <div class="badge">
-          <div class="dot"></div><span>UPCOMING</span>
+          <div class="dot"></div><span>UPCOMING SPECIAL EDITION</span>
         </div>
-        <div class="ev-date">SAT</div>
-        <div class="ev-my"><span>RUN</span><span>DAY</span></div>
+        <div class="ev-collab-badge">EDIT RUN CLUB ✕ PADDOCK ✕ UNCANNED</div>
+        <div class="ev-date">25</div>
+        <div class="ev-my"><span>OCTOBER 2026</span><span>SUNDAY · 6:00 AM – 10:00 AM</span></div>
+        <div class="ev-event-name">PICKLEBALL <span>RUN N' RAVE</span></div>
         <div class="ev-details">
-          <div class="ev-row"><span class="k">START TIME</span><span class="v">06:00 AM</span></div>
-          <div class="ev-row"><span class="k">DISTANCE</span><span class="v">3 KM — All paces welcome</span></div>
-          <div class="ev-row"><span class="k">VIBE</span><span class="v">Music, movement, community</span></div>
+          <div class="ev-row"><span class="k">VENUE</span><span class="v">📍 Paddock, Financial District, Hyderabad</span></div>
+          <div class="ev-row"><span class="k">DATE</span><span class="v">📅 Sunday, 25 October 2026</span></div>
+          <div class="ev-row"><span class="k">TIMINGS</span><span class="v">⏰ 06:00 AM – 10:00 AM (Warmup at 6:00 AM)</span></div>
+          <div class="ev-row"><span class="k">DISTANCE</span><span class="v">🏃 3 KM Group Run around Financial District</span></div>
+          <div class="ev-row"><span class="k">ACTIVITIES</span><span class="v">🏓 Pickleball (Casual games & challenges) + Zumba</span></div>
+          <div class="ev-row"><span class="k">MUSIC</span><span class="v">🪩 Live DJ — Tollywood, Bollywood & EDM Rave</span></div>
+          <div class="ev-row"><span class="k">INCLUSIONS</span><span class="v">🥤 Uncanned Prebiotic Sodas + Veg/Non-Veg Rice Bowl</span></div>
+        </div>
+        <div style="margin-top: 24px;">
+          <a href="#register" class="btn-lb">REGISTER FOR THIS EVENT</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule">
+      <div class="sched-lbl">
+        <div class="ln"></div><span>EVENT TIMELINE</span>
+        <div class="ln"></div>
+      </div>
+      <div class="sched-h">EVENT <span class="ac">SCHEDULE</span></div>
+      <div class="sched-sub">Paddock ✕ Uncanned ✕ Edit Run Club · Sunday, 25 October 2026</div>
+
+      <div class="sched-table">
+        <div class="sched-row">
+          <div class="sched-time">6:00 AM</div>
+          <div class="sched-info">
+            <div class="sched-title">REGISTRATIONS AND WARM UP</div>
+            <div class="sched-desc">Check-in at Paddock, collect gear, meet the runners, and dynamic warm-up session.</div>
+          </div>
+        </div>
+        <div class="sched-row highlight">
+          <div class="sched-time">6:15 AM</div>
+          <div class="sched-info">
+            <div class="sched-title">GROUP RUN AROUND FINANCIAL DISTRICT</div>
+            <div class="sched-desc">3KM scenic group run. All paces welcome — runners, joggers, walkers.</div>
+          </div>
+        </div>
+        <div class="sched-row">
+          <div class="sched-time">7:00 AM</div>
+          <div class="sched-info">
+            <div class="sched-title">COOL-DOWN FOLLOWED BY ZUMBA / DANCE / FITNESS SESSION</div>
+            <div class="sched-desc">Guided high-energy post-run cool down, mobility, and zumba fitness dance session.</div>
+          </div>
+        </div>
+        <div class="sched-row highlight">
+          <div class="sched-time">7:30 AM</div>
+          <div class="sched-info">
+            <div class="sched-title">PICKLEBALL — CASUAL GAMES, MINI CHALLENGES & SOCIAL PLAY</div>
+            <div class="sched-desc">Hit the courts at Paddock! Paddles provided, friendly rallies, mini-challenges, and court fun.</div>
+          </div>
+        </div>
+        <div class="sched-row">
+          <div class="sched-time">8:30 AM</div>
+          <div class="sched-info">
+            <div class="sched-title">DJ STARTS AND THE VIBE SHIFTS INTO THE RAVE</div>
+            <div class="sched-desc">The tempo rises — live DJ kicks in, lights, and full-blown rave atmosphere.</div>
+          </div>
+        </div>
+        <div class="sched-row last">
+          <div class="sched-time">8:30 AM – 10:00 AM</div>
+          <div class="sched-info">
+            <div class="sched-title">MUSIC, DANCING, BREAKFAST, BREWS & NETWORKING</div>
+            <div class="sched-desc">Tollywood, Bollywood & EDM music, Uncanned prebiotic sodas, warm Veg/Non-Veg rice bowls & community vibes.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section id="highlights">
+      <div class="hl-lbl">
+        <div class="ln"></div><span>WHAT'S INCLUDED</span>
+        <div class="ln"></div>
+      </div>
+      <div class="hl-h">EVENT <span class="ac">HIGHLIGHTS</span></div>
+      <div class="hl-sub">Everything you get with your Edit Run Club registration at Paddock</div>
+
+      <div class="hl-grid">
+        <div class="hl-card">
+          <div class="hl-badge">DRINKS</div>
+          <div class="hl-icon">🥤</div>
+          <div class="hl-title">UNCANNED DRINKS</div>
+          <div class="hl-desc">Cold, refreshing craft prebiotic sodas — Orange Swirl, Ginger Lemon, and Mango Blaze flavors.</div>
+        </div>
+
+        <div class="hl-card">
+          <div class="hl-badge">BREAKFAST</div>
+          <div class="hl-icon">🍲</div>
+          <div class="hl-title">RICE BOWL WITH VEGGIES</div>
+          <div class="hl-desc">Nutritious, warm Veg and Non-Veg rice bowls with fresh veggies included to refuel your body.</div>
+        </div>
+
+        <div class="hl-card">
+          <div class="hl-badge">MUSIC & RAVE</div>
+          <div class="hl-icon">🪩</div>
+          <div class="hl-title">TOLLYWOOD, BOLLYWOOD & EDM</div>
+          <div class="hl-desc">Electrifying DJ sets keeping the court and crowd buzzing with high-tempo tracks till 10:00 AM.</div>
+        </div>
+
+        <div class="hl-card">
+          <div class="hl-badge">VENUE</div>
+          <div class="hl-icon">🏓</div>
+          <div class="hl-title">PADDOCK COURTS</div>
+          <div class="hl-desc">World-class pickleball facility in Financial District featuring premium courts and social sporting zones.</div>
         </div>
       </div>
     </section>
@@ -2007,9 +2450,8 @@
         <div class="ln"></div><span>REGISTRATION</span>
         <div class="ln"></div>
       </div>
-      <div class="reg-h">REGISTER FOR<br><span class="ac">THIS SATURDAY</span></div>
-      <div class="reg-sub">Fill in your details below. Complete your payment via UPI, enter the UTR number, and upload a
-        screenshot.</div>
+      <div class="reg-h">REGISTER FOR<br><span class="ac">PICKLEBALL RUN N' RAVE</span></div>
+      <div class="reg-sub">Sunday, 25 October 2026 · 6:00 AM – 10:00 AM · Paddock, Financial District.<br>Fill in your details below, complete your payment via UPI, enter the UTR number, and upload your screenshot.</div>
 
       <form class="reg-form" id="regForm" novalidate>
         <!-- Name -->
@@ -2030,6 +2472,20 @@
           <input type="email" id="regEmail" placeholder="you@example.com" required>
         </div>
 
+        <!-- Breakfast Preference -->
+        <div class="form-group">
+          <label>BREAKFAST BOWL PREFERENCE <span class="req">*</span></label>
+          <div class="meal-options">
+            <label class="meal-option">
+              <input type="radio" name="mealChoice" value="Veg Rice Bowl" checked>
+              <span>🌱 Veg Rice Bowl</span>
+            </label>
+            <label class="meal-option">
+              <input type="radio" name="mealChoice" value="Non-Veg Rice Bowl">
+              <span>🍗 Non-Veg Rice Bowl</span>
+            </label>
+          </div>
+        </div>
 
         <!-- Payment QR -->
         <div class="pay-section">
@@ -2103,7 +2559,7 @@
       <div class="form-msg" id="formSuccess">
         <div class="msg-icon">✅</div>
         <div class="msg-title">REGISTERED SUCCESSFULLY!</div>
-        <div class="msg-text">We've received your registration. See you this Saturday at 6AM! 🏃‍♂️</div>
+        <div class="msg-text">We've received your registration for Pickleball Run N' Rave. See you this Sunday, Oct 25 at 6:00 AM at Paddock, Financial District! 🏃‍♂️🏓🪩</div>
         <div class="wa-divider"></div>
         <a href="https://chat.whatsapp.com/JYmMxAOkKu52N6bp3CbNmB" target="_blank" class="wa-join">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -2294,6 +2750,8 @@
       var email = document.getElementById('regEmail').value.trim();
       var utr = document.getElementById('regUTR').value.trim();
       var feedback = document.getElementById('regFeedback').value.trim();
+      var mealChoice = (document.querySelector('input[name="mealChoice"]:checked') || {}).value || 'Veg Rice Bowl';
+      var combinedFeedback = '[Breakfast: ' + mealChoice + ']' + (feedback ? ' ' + feedback : '');
 
       // Validate
       if (!name || !phone || !email || !utr) {
@@ -2320,7 +2778,7 @@
           phone: phone,
           email: email,
           utr: utr,
-          feedback: feedback,
+          feedback: combinedFeedback,
           fileName: selectedFile.name,
           fileType: selectedFile.type,
           fileData: base64
